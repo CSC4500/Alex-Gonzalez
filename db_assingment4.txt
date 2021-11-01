@@ -1,0 +1,87 @@
+CREATE DATABASE animate_db;
+
+USE animate_db;
+
+CCREATE TABLE `MyList` (
+  `ListID` int NOT NULL AUTO_INCREMENT,
+  `UserID` int NOT NULL,
+  `Watching` varchar(45) DEFAULT NULL,
+  `Reading` varchar(45) DEFAULT NULL,
+  `Chapter` int DEFAULT NULL,
+  `Completed` varchar(45) DEFAULT NULL,
+  `Rating` decimal(3,1) DEFAULT NULL,
+  `FavAnime` char(45) DEFAULT NULL,
+  `FavManga` varchar(45) DEFAULT NULL,
+  `FavCharacters` char(45) DEFAULT NULL,
+  `MediumID` int NOT NULL,
+  PRIMARY KEY (`ListID`),
+  UNIQUE KEY `LisID_UNIQUE` (`ListID`),
+  UNIQUE KEY `UserID_UNIQUE` (`UserID`),
+  UNIQUE KEY `MediumID_UNIQUE` (`MediumID`),
+  CONSTRAINT `UserID` FOREIGN KEY (`UserID`) REFERENCES `Employee` (`UserID`)
+);
+
+CREATE TABLE `User` (
+  `UserID` int NOT NULL AUTO_INCREMENT,
+  `User_email` varchar(35) NOT NULL,
+  `User_pw` varchar(25) NOT NULL,
+  `User_DOB` datetime NOT NULL,
+  `User_FName` char(20) NOT NULL,
+  `User_LName` char(20) NOT NULL,
+  PRIMARY KEY (`UserID`),
+  UNIQUE KEY `UserID_UNIQUE` (`UserID`),
+  UNIQUE KEY `User_email_UNIQUE` (`User_email`)
+);
+
+CREATE TABLE `Medium` (
+  `MediumID` int NOT NULL AUTO_INCREMENT,
+  `MName` varchar(45) NOT NULL,
+  `NumOfEpisodes` int DEFAULT NULL,
+  `NumOfChapters` int DEFAULT NULL,
+  `FanRating` decimal(3,1) DEFAULT NULL,
+  `Genre` char(15) DEFAULT NULL,
+  `Release_Yr` datetime DEFAULT NULL,
+  `Studio` char(35) DEFAULT NULL,
+  `CharacterID` int DEFAULT NULL,
+  `VoiceActorID` int DEFAULT NULL,
+  `AuthorID` int DEFAULT NULL,
+  PRIMARY KEY (`MediumID`),
+  UNIQUE KEY `MediumID_UNIQUE` (`MediumID`),
+  KEY `CharacterID_idx` (`CharacterID`),
+  KEY `VoiceActorID_idx` (`VoiceActorID`),
+  KEY `AuthorID_idx` (`AuthorID`),
+  CONSTRAINT `AuthorID` FOREIGN KEY (`AuthorID`) REFERENCES `Author` (`AuthorID`),
+  CONSTRAINT `CharacterID` FOREIGN KEY (`CharacterID`) REFERENCES `Character` (`CharacterID`),
+  CONSTRAINT `VoiceActorID` FOREIGN KEY (`VoiceActorID`) REFERENCES `VoiceActor` (`VoiceActorID`)
+);
+
+CREATE TABLE `Character` (
+  `CharacterID` int NOT NULL AUTO_INCREMENT,
+  `Name` char(40) NOT NULL,
+  `Anime` char(45) NOT NULL,
+  `Manga` char(45) NOT NULL,
+  `VoiceActor` char(40) DEFAULT NULL,
+  `NumOfFavs` int NOT NULL,
+  PRIMARY KEY (`CharacterID`),
+  UNIQUE KEY `CharacterID_UNIQUE` (`CharacterID`)
+);
+
+CREATE TABLE `VoiceActor` (
+  `VoiceActorID` int NOT NULL,
+  `VAName` char(45) NOT NULL,
+  `Age` int DEFAULT NULL,
+  `Gender` char(1) DEFAULT NULL,
+  `AnimeFeatures` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`VoiceActorID`),
+  UNIQUE KEY `VoiceActorID_UNIQUE` (`VoiceActorID`)
+);
+
+CREATE TABLE `Author` (
+  `AuthorID` int NOT NULL AUTO_INCREMENT,
+  `Name` char(45) NOT NULL,
+  `Age` int DEFAULT NULL,
+  `Gender` char(1) DEFAULT NULL,
+  `Series` varchar(45) NOT NULL,
+  PRIMARY KEY (`AuthorID`),
+  UNIQUE KEY `AuthorID_UNIQUE` (`AuthorID`)
+);

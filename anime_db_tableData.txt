@@ -1,0 +1,179 @@
+use anime_db;x
+insert into user values(
+5,	'jwank4@tamu.edu',	'Tu6NiLedHc2W',	'1995/09/15',	'Jillian',	'Wank');
+insert into user values(
+6,	'pcurrington5@gnu.org',	'tgrTV2QIr47',	'2003/09/15',	'Padraic', 'Currington');
+insert into user values(
+7,	'watchly6@nih.gov',	'Wgbm0wS2',	'1998/10/30',	'Wallie',	'Atchly');
+insert into user values(
+8,	'cwylder7@theglobeandmail.com', 'fTVgTboN',	'2006/05/28/',	'Cynthie',	'Wylder');
+insert into user values(
+9,	'bdive8@independent.co.uk',	'yV0JpdD',	'2003/07/13/',	'Beverlee',	'Dive');
+insert into user values(
+10, 'jpetrashov9@xing.com',	'D3N1ly',	'1993/02/21/',	'Janetta',	'Petrashov');
+insert into user values(
+11, 'dbotwrighta@ed.gov',	'sAmBsWRiQyA',	'2001/09/13/',	'Delores',	'Botwright');
+insert into user values(
+12,	'llafondb@engadget.com', 'RZLtBFuZfBtT',	'1999/01/21',	'Lanny',	'Lafond');
+insert into user values(
+13,	'jgoeringc@chronoengine.com',	'JEuDtZyn',	'1992/03/20/',	'Julie',	'Goering');
+insert into user values(
+14,	'rrenolsd@si.edu', 'jeOnaM',	'1996/05/26',	'Reinaldos',	'Renols');
+insert into user values(
+15,	'gkyde@wired.com',	'Pvas2HLKTkz',	'1997/02/17/',	'Giff',	'Kyd');
+insert into user values(
+16,	'fwhellansf@yolasite.com',	'v1CJoP9Nsl',	'2004/03/05',	'Flossie',	'Whellans');
+insert into user values(
+17, 'bbeentjesg@yahoo.co.jp',	'c9p0DHQDQj',	'1995/11/21',	'Billi',	'Beentjes');
+insert into user values(
+18,	'bbeahanh@issuu.com',	'xlfClF28',	'2003/07/27',	'Bradan',	'Beahan');
+insert into user values(
+19,	'ebullimorei@wix.com',	'7xHCwIUxONGK',	'2004/03/24',	'Eloisa',	'Bullimore');
+insert into user values(
+20,	'rsiseyj@techcrunch.com', '8s4jISb28ol',	'2002/12/13',	'Renado',	'Sisey');
+
+insert into mylist values (1, 12, "Chainsaw Man",'N', null, 'Y', 108, 'N', null);
+insert into mylist values (2, 3, "Made in Abyss",'N', null, 'N', null, 'Y', 9.1);
+insert into mylist values (3, 10, "One Piece",'Y', 965, 'N', null, 'N', null);
+insert into mylist values (4, 7, "Naruto",'Y', 806, 'N', null, 'Y', 7.2);
+insert into mylist values (5, 1, "Assassination Classroom",'Y', 41, 'N', null, 'N',null);
+insert into mylist values (6, 6, "Berserk",'N', null, 'Y', 1212, 'N', null);
+insert into mylist values (7, 8, "Jojo's Bizarre Adventure",'Y', 205, 'N', null, 'N', null);
+insert into mylist values (8, 17, "Mob Psycho",'N', 26, 'N', null, 'Y', 9.3);
+insert into mylist values (9, 20, "My Hero Academia",'N', null, 'Y', 214, 'N', null);
+insert into mylist values (10, 9, "Platinum End",'Y', 5, 'N', null, 'N', null);
+insert into mylist values (11, 2, "Death Note",'Y', 10, 'N', null, 'N', null);
+insert into mylist values (12, 11, 'One Punch Man','Y', 32, 'Y', 300, 'N', null);
+insert into mylist values (13, 18, 'Code Geass','Y', 2, 'N', null, 'N', null);
+insert into mylist values (14, 15, 'Another','Y', 12, 'N', null, 'Y', 8.2);
+insert into mylist values (15, 16, 'Attack on Titan','Y', 84, 'N', null, 'N', null);
+insert into mylist values (16, 5, 'Hunter x Hunter','Y', 112, 'N', null, 'Y', 9.9);
+insert into mylist values (17, 19, 'Solo Leveling','N', 0, 'Y', 267, 'N', null);
+insert into mylist values (18, 4, 'Jujutsu Kaisen','Y', 20, 'N', null, 'N', null);
+insert into mylist values (19, 14, 'Akame Ga Kill','Y', 105, 'N', null, 'Y', 5.0);
+insert into mylist values (20, 13, 'Mob Psycho','Y', 575, 'N', null, 'Y', 8.1);
+
+insert into series values (1, "Chainsaw Man", 35, 2585, 2.4, 'Documentary', 2006, 'Ryan, Lehner and Collier', 1);
+insert into series values (2, "Made in Abyss", 1348, 1965, 6.3, 'Comedy', 2001, 'Stark-Schulist', 2);
+insert into series values (3, "One Piece", 33, 127, 9.3, 'Comedy|Drama', 2008, 'Berge Group', 3);
+insert into series values (4, "Naruto", 1316, 1730, 9.8, 'Comedy|Musical', 2006, 'Keeling, Wilderman and Dickinson', 4);
+insert into series values (5, "Assassination Classroom", 58, 2744, 8.0, 'Documentary', 2008, 'Marks Group', 5);
+insert into series values (6, "Berserk", 1187, 20, 2.6, 'Drama', 1988, 'Strosin-Ritchie', 6);
+insert into series values (7, "Jojo's Bizzare Adventure", 883, 968, 8.8, 'Action|Romance|Thriller', 1988, 'Bergstrom-Marks', 7);
+insert into series values (8, "Mob Psycho", 188, 2694, 6.8, 'Drama', 2010, 'Reynolds, Spinka and Kuhlman', 8);
+insert into series values (9, "My Hero Academia", 551, 159, 7.9, 'Documentary', 2003, 'Beatty, Gutmann and Pacocha', 9);
+insert into series values (10, "Platinum End", 1471, 1092, 4.9, 'Adventure|Drama', 2011, 'Daugherty-Schaden', 10);
+insert into series values (11, "One Punch Man", 129, 1084, 3.4, 'Comedy', 1988, 'Schmidt, Rogahn and Kulas', 11);
+insert into series values (12, "Code Geass", 1344, 12, 6.2, 'Horror', 2004, 'Mayert Inc', 12);
+insert into series values (13, "Another", 1346, 82, 1.5, 'Documentary', 2008, 'Block, Daniel and Conn', 13);
+insert into series values (14, "Attack on Titan", 488, 1112, 3.4, 'Drama|Romance', 1993, 'Johnston-Heidenreich', 14);
+insert into series values (15, "Hunter x Hunter", 21, 1840, 5.1, 'Crime|Drama', 2010, 'Bernier-Mayert', 15);
+insert into series values (16, "Solo Leveling", 213, 28, 5.1, 'Drama', 2007, 'Beer-Botsford', 16);
+insert into series values (17, "Jujutsu Kaisen", 277, 1891, 8.7, 'Drama', 2004, 'Predovic-Wunsch', 17);
+insert into series values (18, "Akame Ga Kill", 754, 1756, 3.8, 'Crime|Drama|Romance', 2007, 'Kertzmann, Monahan and Gaylord', 18);
+insert into series values (19, "Death Note", 1469, 482, 4.0, 'Comedy|Crime|Mystery', 2001, 'Corkery-Ullrich', 19);
+insert into series values (20, "Demon Slayer", 1335, 2858, 1.5, 'Musical', 2001, 'Dibbert Inc', 20);
+
+
+insert into author values(
+1,"Thekla Metcalf",54,"F", "Chainsaw Man", 1);
+insert into author values(
+2,"Jere Albrecht",37,"M", "Mob Psycho", 8);
+insert into author values(
+3,"Lily Bedell", null, "F", "Plantinum End", 10);
+insert into author values(
+4,"Betti Byham",30,"F","Another", 15);
+insert into author values(
+5,"Udall Spensley",71,"M","Death Note", 11);
+insert into author values(
+6,"Toma Raulston",74,null,"Berserk", 6);
+insert into author values(
+7,"Kordula McOwen",70,"F","One Punch Man", 12);
+insert into author values(
+8,"Jeniece Witul",29,"F", "One Piece", 3);
+insert into author values(
+9,"Morton Asker",37,"M", "Naruto", 4);
+insert into author values(
+10,"Guilbert Thrush",66,"M","Code Geass", 13);
+insert into author values(
+11,"Bale Lawfull",31,"M","Hunter x Hunter", 16);
+insert into author values(
+12,"Cliff Poinsett",53,null,"Akame Ga Kill", 19);
+insert into author values(
+13,"Chantalle Guterson",67,"F","Assassination Classsroom", 5);
+insert into author values(
+14,"Eb Hume",null,"M","Made in Abyss", 2);
+insert into author values(
+15,"Baily Trimme",74,"F","Jujutsu Kaisen", 18);
+insert into author values(
+16,"Jorry Brazer",24,"F","My Hero Academia", 9);
+insert into author values(
+17,"Jeanne Alessandrini",null,"F","Jojo's Bizzare Adventure", 11);
+insert into author values(
+18,"Jerrie Monelli",34,"F","Attack on Titan", 15);
+insert into author values(
+19,"Brant MacDiarmid",52,"M","Demon Slayer", 20);
+insert into author values(
+20,"Noellyn Symper",70,"M","Solo Leveling", 17);
+
+insert into voiceactor values (1, 'Demetris Foro', 40, 'F',"Chainsaw Man", 1);
+insert into voiceactor values (2, 'Almira Hoffner', 53, 'F',"Mob Psycho", 8);
+insert into voiceactor values (3, 'Livvie Connock', 16, null,"Plantinum End", 10);
+insert into voiceactor values (4, 'Norbie Bullivant', 65, 'M',"Another", 15);
+insert into voiceactor values (5, 'Godfrey Fluck', 48, 'M',"Death Note", 11);
+insert into voiceactor values (6, 'Merla Witherden', 25, 'F',"Berserk", 6);
+insert into voiceactor values (7, 'Langston Kevlin', 39, 'F',"One Punch Man", 12);
+insert into voiceactor values (8, 'Tymothy Garthside', 65, 'F',"One Piece", 3);
+insert into voiceactor values (9, 'Octavia Manz', null, 'F',"Naruto", 4);
+insert into voiceactor values (10, 'Sidonnie Blasiak', 64, 'M',"Code Geass", 13);
+insert into voiceactor values (11, 'Vern Robroe', 21, 'F',"Hunter x Hunter", 16);
+insert into voiceactor values (12, 'Ernie Crowe', null, null,"Akame Ga Kill", 19);
+insert into voiceactor values (13, 'Kalinda Maudsley', 17, 'F',"Assassination Classsroom", 5);
+insert into voiceactor values (14, 'Darla Summerscales', 67, 'F', "Made in Abyss", 2);
+insert into voiceactor values (15, 'Kare Halward', 19, 'F',"Jujutsu Kaisen", 18);
+insert into voiceactor values (16, 'Tawnya Mulleary', 45, null,"My Hero Academia", 9);
+insert into voiceactor values (17, 'Robinett McNelly', 45, 'M',"Jojo's Bizzare Adventure", 11);
+insert into voiceactor values (18, 'Jessamyn Peasee', null, 'F',"Attack on Titan", 15);
+insert into voiceactor values (19, 'Donovan Batterton', 68, 'M',"Demon Slayer", 20);
+insert into voiceactor values (20, 'Pennie Whitsun', 64, 'F',"Solo Leveling", 17);
+
+insert into characters values(
+1,"Joseph Joestar", "Jojo's Bizzare Adventure","Jojo's Bizzare Adventure", "Chikao Ootsuka", 10550, 15);
+insert into characters values(
+2,"Levi Ackerman", "Attack On Titan","Attack On Titan", "Hiroshi Kamiya", 30729,13);
+insert into characters values(
+3,"Hyakkimaru", "Dororo", "Dororo", "Mamoru Miyano", 8067,16);
+insert into characters values(
+4,"Feitan Porter", "Hunter x Hunter","Hunter x Hunter", "Akari Hibino", 4048, 12);
+insert into characters values(
+5,"Kurapika", "Hunter x Hunter","Hunter x Hunter", "Miyuki Sawashiro", 13610, 3);
+insert into characters values(
+6,"Genos", "One Punch Man","One Punch Man", "Kaito Ishikawa", 4690, 4);
+insert into characters values(
+7,"Karma Akabane", "Assassination Classroom","Assassination Classroom", "Nobuhiko Okamoto", 9404, 1);
+insert into characters values(
+8,"Archer", "Fate/stay Night","Fate/stay Night", "Junichi Suwabe", 3106, 19);
+insert into characters values(
+9,"Kamina", "Gurren Lagann","Gurren Lagann", "Katsuyuki Konishi", 5282, 20);
+insert into characters values(
+10,"Hiei", "Yuyu Hakusho","Yuyu Hakusho", "Nobuyuki Hiyama", 1614, 2);
+insert into characters values(
+11,"Koro Sensei", "Assassination Classroom","Assassination Classroom", "Jun Fukuyama", 7282, 17);
+insert into characters values(
+12,"Eren Yeager", "Attack on Titan","Attack on Titan", "Yuuki Kaji", 20712, 8);
+insert into characters values(
+13,"Megumi Fushiguro", "Jujutsu Kaisen","Jujutsu Kaisen", "Yuuma Uchida", 11545, 5);
+insert into characters values(
+14,"Akane Tsunemori", "Psycho Pass","Psycho Pass", "Kana Hanazawa", 2039, 6);
+insert into characters values(
+15,"Shigeo Kageyama", "Mob Psycho","Mob Psycho", "Setsuo Itou", 10951, 11);
+insert into characters values(
+16,"Jin Woo Sung", null,"Solo Leveling", null, 6600, 12);
+insert into characters values(
+17,"Kento Nanami", "Jujutsu Kaisen","Jujutsu Kaisen", "Kenjirou Tsuda", 6325, 10);
+insert into characters values(
+18,"Arataka Reigen", "Mob Psycho","Mob Psycho", "Takahiro Sakurai", 13742, 9);
+insert into characters values(
+19,"Thorfinn Karlsefni", "Vinlan Saga","Vinland Saga", "Yuuto Uemura", 7409, 11);
+insert into characters values(
+20,"Saitama", "One Punch Man","One Punch Man", "Makoto Furuwaka", 10358, 14);
